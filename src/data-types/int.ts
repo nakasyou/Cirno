@@ -1,8 +1,3 @@
-
-lcass BaseInt {
-  constructor(init) {
-  }
-}
 /*
  * Int8
  */
@@ -16,5 +11,8 @@ export class Int8 extends BaseInt {
     this.buffer = new ArrayBuffer(1) // 8bit = 1byte
 
     new DataView(buffer).setInt8(0, init, true)
+  }
+  add () {
+    
   }
 }
